@@ -1,0 +1,50 @@
+---
+const { title = "Ryan Loftus" } = Astro.props;
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>{title}</title>
+    </head>
+    <body>
+        <div class="page">
+        <header>
+            <div>
+                <nav>
+                    <a href="/" class="logo">Ryan Loftus</a>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="/">Home</a></li>
+                        <li>
+                            <a href="/about">About</a>
+                        </li>
+                        <li><a href="/projects">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <slot />
+        </main>
+        </div>
+    </body>
+<footer>
+  <p class="footer-col">
+    © {new Date().getFullYear()} Ryan Loftus
+  </p>
+  <nav class="footer-col">
+    <a href="/resume-2026.pdf" target="_blank">Resume</a>
+    <a href="https://github.com/rtloftus" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/rtloftus" target="_blank">LinkedIn</a>
+    <a href="mailto:ryantloftus@gmail.com">Email</a>
+  </nav>
+</footer>
+
+</html>

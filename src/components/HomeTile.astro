@@ -1,0 +1,27 @@
+---
+const { title } = Astro.props;
+const customClass = Astro.props.class || "";
+---
+
+<section class={`home-tile ${customClass}`}>
+  {title && <h2 class="card-header">{title}</h2>}
+  <slot />
+</section>
+
+<style>
+.home-tile {
+  border: 2px solid #cecece;
+  border-radius: 8px;
+  padding: 1rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.card-header {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+</style>

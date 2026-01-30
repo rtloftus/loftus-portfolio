@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HomeTile from "../components/HomeTile.astro";
+---
+
+<Layout title="Ryan Loftus">
+  <div class="home-grid">
+  <HomeTile class = "featured" title="Featured Project">
+	<p><strong>SLICES</strong></p>
+	<p>A casual puzzle game where players solve as many randomized puzzles as possible
+	within 60 seconds</p>
+	<p>Check out my projects <a class="tile-link" href="/projects">here</a>.</p>
+  </HomeTile>
+  <HomeTile class="intro">
+	<h2>Hi, I'm Ryan. I'm a Software Engineer based in Pottstown, PA.</h2>
+  </HomeTile>
+   <HomeTile class="headshot">
+	<img src="/headshot.png" alt="Headshot of Ryan Loftus" class="headshot-img"/>
+  </HomeTile>
+  <HomeTile class="about">
+	<p>I attend <strong>Villanova University</strong> as a Software Engineering Masters student. <a class="tile-link" href="/about">Learn more about me</a></p>
+  </HomeTile>
+   <HomeTile class="loft-sites">
+	<p>Like this website? I coded it myself! Need one? I can help with that. <a class="tile-link" href="https://loftsites.netlify.app">Visit Loft Sites</a></p>
+  </HomeTile>
+
+  <HomeTile class="contact" title="Find me here:">
+ <div class="contact-grid">
+  <a
+    class="contact-tile github"
+    href="https://github.com/rtloftus"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+  >
+    <img src="/github-logo.png" alt="" class="contact-icon" />
+  </a>
+
+  <a
+    class="contact-tile linkedin"
+    href="https://www.linkedin.com/in/rtloftus"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    <img src="/linkedin-logo.png" alt="" class="contact-icon" />
+  </a>
+
+  <a
+    class="contact-tile email"
+    href="mailto:ryantloftus@gmail.com"
+    aria-label="Email"
+  >
+    <img src="/mail-icon-no-border.png" alt="" class="contact-icon" />
+  </a>
+</div>
+
+</HomeTile>
+
+  <HomeTile class="resume" title="View my Resume">
+	<a class="tile-link"href="/resume-2026.pdf">Click here to see what I have to offer.</a>
+  </HomeTile>
+
+
+</div>
+</Layout>
+
