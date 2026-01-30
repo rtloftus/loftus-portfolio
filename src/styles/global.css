@@ -406,3 +406,54 @@ footer {
 footer nav a {
   margin-left: 1rem;
 }
+
+@media (max-width: 768px) {
+  main {
+    padding: 0.75rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 1rem;
+  }
+
+  .home-grid > .home-tile {
+    grid-column: span 1;
+    grid-row: span 1;
+    min-height: 140px;
+  }
+
+  .home-grid > .home-tile.featured {
+    min-height: 220px;
+    background-position: center;
+  }
+
+  .home-grid > .home-tile.headshot {
+    min-height: 180px;
+  }
+
+  .headshot-img {
+    max-width: 180px;
+    max-height: 180px;
+    margin: 0 auto;
+  }
+
+  .home-grid > .home-tile.contact {
+    padding: 0.75rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-tile.email {
+    grid-column: span 1;
+  }
+
+  .home-tile:hover,
+  .contact-tile:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
