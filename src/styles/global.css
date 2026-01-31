@@ -451,19 +451,19 @@ footer nav a {
 
   /* Row 4 */
   .home-grid > .home-tile.loft-sites {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
   }
 
   .home-grid > .home-tile.resume {
-    grid-column: span 1;
+    grid-column: span 2;
     grid-row: span 1;
   }
 
   /* Row 5 */
   .home-grid > .home-tile.contact {
-    grid-column: span 3;
-    grid-row: span 1;
+    grid-column: span 2;
+    grid-row: span 2;
     padding: 0.5rem;
   }
 
