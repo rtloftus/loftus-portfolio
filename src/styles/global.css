@@ -291,6 +291,12 @@ footer {
     font-weight: 600;
 }
 
+.about-para a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold
+}
+
 .about-list-head {
     font-size: 1.25rem;
     margin-top: 1rem;
