@@ -433,10 +433,6 @@ footer nav a {
     width: 100%;
     padding: 0;
 }
-.footer-col {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
 
  .home-grid {
   grid-template-columns: repeat(3, 1fr);
