@@ -413,55 +413,81 @@ footer nav a {
   }
 
   .home-grid {
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(120px, auto);
+    gap: 0.75rem;
   }
 
-  .home-grid > .home-tile {
-    grid-column: 1 / -1;
-    grid-row: auto;
-    min-height: unset;
-  }
-
+  /* Row 1–2 */
   .home-grid > .home-tile.featured {
-    aspect-ratio: 16 / 9;
+    grid-column: span 2;
+    grid-row: span 2;
     background-position: center;
   }
 
+  .home-grid > .home-tile.intro {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  /* Row 3 */
+  .home-grid > .home-tile.about {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
   .home-grid > .home-tile.headshot {
+    grid-column: span 1;
+    grid-row: span 1;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   .headshot-img {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
   }
 
+  /* Row 4 */
+  .home-grid > .home-tile.loft-sites {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .home-grid > .home-tile.resume {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* Row 5 */
   .home-grid > .home-tile.contact {
+    grid-column: span 3;
+    grid-row: span 1;
     padding: 0.5rem;
   }
 
+  /* Contact tiles: 3 equal squares */
   .contact-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
   }
 
   .contact-tile {
+    aspect-ratio: 1 / 1;
     padding: 0.5rem;
   }
 
   .contact-tile img {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
 
   .contact-tile.email {
     grid-column: span 1;
   }
 
+  /* Kill hover effects on touch */
   .home-tile:hover,
   .contact-tile:hover {
     transform: none;
