@@ -455,6 +455,10 @@ footer {
   width: 100%;
 }
 
+.footer-col p {
+    padding: 0.5rem;
+}
+
 
 
   /* Row 1–2 */
