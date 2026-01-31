@@ -469,7 +469,7 @@ footer nav a {
 
   /* Contact tiles: 3 equal squares */
   .contact-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 0.5rem;
   }
 
