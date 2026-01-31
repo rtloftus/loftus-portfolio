@@ -427,9 +427,15 @@ footer nav a {
     padding: 0.75rem;
   }
 
+  
+
   header, footer {
     width: 100%;
     padding: 0;
+}
+.footer-col {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
  .home-grid {
