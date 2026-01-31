@@ -422,12 +422,15 @@ footer nav a {
 
 @media (max-width: 768px) {
 
-header, footer {
-    width: 100%;
-}
+
   main {
     padding: 0.75rem;
   }
+
+  header, footer {
+    width: 100%;
+    padding: 0;
+}
 
  .home-grid {
   grid-template-columns: repeat(3, 1fr);
