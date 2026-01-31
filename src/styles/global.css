@@ -433,7 +433,9 @@ footer nav a {
     width: 100%;
     padding: 0;
 }
-
+.footer-col {
+    text-align: center;
+}
  .home-grid {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
