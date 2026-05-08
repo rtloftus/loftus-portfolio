@@ -132,7 +132,8 @@ footer {
 .home-grid>.home-tile.featured {
     grid-column: span 3;
     grid-row: span 2;
-    background-image: url("/slices.png");
+    /* change this for featured */
+    background-image: url("/slices-term.png"); 
     background-size: cover;
     color: white;
 }
