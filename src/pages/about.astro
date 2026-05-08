@@ -3,7 +3,12 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="About">
+    <div class="about">
     <h1 class="title">About Me</h1>
+
+    <p class="about-lead">
+Software engineer focused on building clean, usable systems.
+</p>
     <p class="about-para">
         I'm a software engineer with over five years of programming experience
         and more than a decade working in design. I taught myself tools like
@@ -42,17 +47,22 @@ import Layout from "../layouts/Layout.astro";
     </p>
     <h2 class="about-head">Tools</h2>
     <h3 class="about-list-head">Programming</h3>
-    <ul class="about-list">
-        <li>Java, Python, JavaScript</li>
-        <li>Astro, React</li>
-        <li>HTML, CSS</li>
-    </ul>
+    <div class="tag-row">
+<span class="tag">Astro</span>
+  <span class="tag">HTML</span>
+  <span class="tag">Java</span>
+    <span class="tag">JavaScript</span>
+  <span class="tag">Python</span>
+  <span class="tag">React</span>
+    <span class="tag">SQL</span>
+</div>
     <h3 class="about-list-head">Design</h3>
-    <ul class="about-list">
-        <li>Adobe Creative Suite</li>
-        <li>Figma</li>
-        <li>Design-to-code workflows</li>
-    </ul>
+    <div class="tag-row">
+        <span class="tag">Adobe Creative Suite</span>
+             <span class="tag">CSS</span>
+        <span class="tag">Design-to-code workflows</span>
+        <span class="tag">Figma</span>
+    </div>
     <h2 class="about-head">Next</h2>
     <p class="about-para">
         Feel free to explore my projects, or reach out via <a
@@ -60,4 +70,5 @@ import Layout from "../layouts/Layout.astro";
         > or <a href="https://www.linkedin.com/in/rtloftus">LinkedIn</a> if you'd
         like to connect.
     </p>
+    </div>
 </Layout>
