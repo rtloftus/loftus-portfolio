@@ -133,7 +133,7 @@ footer {
     grid-column: span 3;
     grid-row: span 2;
     /* change this for featured */
-    background-image: url("/slices-term.png"); 
+    background-image: url("/ezcert-feature.png"); 
     background-size: cover;
     color: white;
 }
